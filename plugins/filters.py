@@ -172,7 +172,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         elif query.data == "help_data":
             await query.answer()
             keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton("⚡ BACK", callback_data="start_data"),
+                [InlineKeyboardButton("🔐 Close", callback_data="close_data"),
                     InlineKeyboardButton("ABOUT 🚩", callback_data="about_data")],
                 [InlineKeyboardButton("🔻 FEEDBACKS & SUGGESTIONS 🔻", url="https://telegram.dog/Mj_Chats")]
                   
@@ -188,9 +188,9 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         elif query.data == "about_data":
             await query.answer()
             keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton("⚡ BACK", callback_data="help_data"),
-                    InlineKeyboardButton("HOME 🏠", callback_data="start_data")],
-                [InlineKeyboardButton("⚙️ SOURCE CODE ⚙️", url="https://github.com/Iam-The-Master/Auto-Filter-Bot")]
+                [InlineKeyboardButton("⚡ HELP", callback_data="help_data"),
+                    InlineKeyboardButton("Close 🔐", callback_data="close_data")],
+                [InlineKeyboardButton("⚙️ SOURCE CODE ⚙️", url="https://t.me/MvJnAdmin/4")]
             ])
 
             await query.message.edit_text(
