@@ -40,7 +40,7 @@ async def help(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⚡ BACK", callback_data="start_data"),
+                        InlineKeyboardButton("🔐 Close", callback_data="close_data"),
                         InlineKeyboardButton("ABOUT 🚩", callback_data="about_data"),
                     ],
                     [
@@ -64,11 +64,11 @@ async def about(client, message):
                 [
                     [
                         InlineKeyboardButton("🚩 HELP", callback_data="help_data"),
-                        InlineKeyboardButton("HOME 🏠", callback_data="start_data"),
+                        InlineKeyboardButton("Close "🔐", callback_data="close_data"),
                     ],
                     [
                         InlineKeyboardButton(
-                            "⚙️ SOURCE CODE ⚙️", url="https://github.com/Iam-The-Master/Auto-Filter-Bot")
+                            "⚙️ SOURCE CODE ⚙️", url="https://t.me/MvJnAdmin/4")
                     ]
                 ]
             ),
