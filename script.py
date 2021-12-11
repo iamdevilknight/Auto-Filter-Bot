@@ -10,7 +10,7 @@ class script(object):
 
     HELP_MSG = """<b><i>No One Gonna Help You 🙊
 
-Created For @Moviejunction_Group 😉</b></i>"""
+Created For @Moviejunction Group 😉</b></i>"""
 
 
     ABOUT_MSG = """⭕️<b> My Name : @DianaPrincessBot</b>
