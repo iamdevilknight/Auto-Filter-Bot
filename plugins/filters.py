@@ -172,7 +172,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         elif query.data == "help_data":
             await query.answer()
             keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton("🔐 Close", callback_data="close_data"),
+                [InlineKeyboardButton("🔐 Close", callback_data="close"),
                     InlineKeyboardButton("ABOUT 🚩", callback_data="about_data")],
                 [InlineKeyboardButton("🔻 FEEDBACKS & SUGGESTIONS 🔻", url="https://telegram.dog/Mj_Chats")]
                   
@@ -189,7 +189,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             await query.answer()
             keyboard = InlineKeyboardMarkup([
                 [InlineKeyboardButton("⚡ HELP", callback_data="help_data"),
-                    InlineKeyboardButton("Close 🔐", callback_data="close_data")],
+                    InlineKeyboardButton("Close 🔐", callback_data="close")],
                 [InlineKeyboardButton("⚙️ SOURCE CODE ⚙️", url="https://t.me/MvJnAdmin/4")]
             ])
 
