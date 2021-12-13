@@ -40,7 +40,7 @@ async def help(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔐 Close", callback_data="close_data"),
+                        InlineKeyboardButton("🔐 Close", callback_data="close"),
                         InlineKeyboardButton("ABOUT 🚩", callback_data="about_data"),
                     ],
                     [
@@ -64,7 +64,7 @@ async def about(client, message):
                 [
                     [
                         InlineKeyboardButton("🚩 HELP", callback_data="help_data"),
-                        InlineKeyboardButton("Close 🔐", callback_data="close_data"),
+                        InlineKeyboardButton("Close 🔐", callback_data="close"),
                     ],
                     [
                         InlineKeyboardButton(
